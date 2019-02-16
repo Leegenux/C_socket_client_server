@@ -13,7 +13,7 @@
 int main(int argc, char *argv[]) {
     //
     if (argc != 2) {
-        fprintf(stderr, "Usage: tcp-server <port>");
+        fprintf(stderr, "Usage: tcp-server <port>\n");
         return 1;
     }
 
