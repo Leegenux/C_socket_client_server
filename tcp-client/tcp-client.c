@@ -28,6 +28,7 @@ int main(int argc, char *argv[]) {
     echoServer.sin_family = AF_INET;
     echoServer.sin_addr.s_addr = inet_addr(argv[1]);
     echoServer.sin_port = htons(atoi(argv[2]));
+    memset(&(echoServer.sin_zero), 0, sizeof(echoServer.sin_zero));
 
     // Establish connection
     if (connect(sock, 
@@ -60,7 +61,7 @@ int main(int argc, char *argv[]) {
 
     // Print the echo
     buffer[received] = '\0';
-    printf("%s", buffer);
+    printf("%s\n", buffer);
 
     return 0;
 }
