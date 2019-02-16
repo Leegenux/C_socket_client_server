@@ -25,7 +25,7 @@ It requires the correct DNS configuration and working network to operate.
 
 The executable `tcp-server` listens on `localhost:port`. It serves as a echo server, that is, echoes back the data sent from `tcp-client`.
 
-And the port should be given as command line parameter. 
+The port should be given as command line parameter. 
 
 Its help string : `Usage:  tcp-server <port>`
 
