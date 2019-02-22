@@ -10,7 +10,7 @@
 #define BUFFSIZE 32
 
 int main(int argc, char *argv[]) {
-    // Retrieve the command line parameters
+    // Check the command line parameters
     if (argc != 4) {
         fprintf(stderr, "Usage: tcp-client <server-ip> <port> <data>\n");
         return 1;
