@@ -11,7 +11,7 @@
 #define MAXPENDING 5
 
 int main(int argc, char *argv[]) {
-    //
+    // Check the arguments
     if (argc != 2) {
         fprintf(stderr, "Usage: tcp-server <port>\n");
         return 1;
